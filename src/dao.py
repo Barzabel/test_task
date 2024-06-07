@@ -8,8 +8,10 @@ base = MongoDB()
 fork = {
     'month': 'MS',
     'day': 'D',
-        
+    'hour': 'h'       
     }
+
+
 
 def get_labels(dt_from, dt_upto, group_type):
 
