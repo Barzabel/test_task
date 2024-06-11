@@ -36,6 +36,6 @@ def get_dataset_labels(dt_from, dt_upto, group_type):
     for x in labels:
         dataset.append(get_total_sum(x, group_type))
     return {
-        'dataset ': dataset,
+        'dataset': dataset,
         'labels' : labels,
     }

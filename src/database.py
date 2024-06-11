@@ -10,11 +10,11 @@ class MongoDB(object):
         self._collection = self._client[db_name][collection]
 
 
-    def get_data(self, gte, lte):
+    def get_data(self, gte, lt):
 
         data = self._collection.find({"dt": { 
             '$gte': gte,
-            '$lte': lte,
+            '$lt': lt,
         }})
         return [value for value in data]
 
